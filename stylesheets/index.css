@@ -1,0 +1,83 @@
+html{
+  background-color: #B0E0FF;
+}
+nav {
+  background-color: #002231;
+  height: 122px;
+  margin-bottom: 10px;
+}
+#name{
+  list-style-type: none;
+  width: 40%;
+  float: left;
+
+  line-height: 120px;
+  display: inline-block;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+font-family: 'Dosis', sans-serif;
+font-weight: bolder;
+}
+.buttons{
+  list-style-type: none;
+  width: 100px;
+  float: left;
+  width: 10%;
+  line-height: 120px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+.buttons a{
+   text-decoration: none;
+}
+nav ul li a:visited {
+  color: white;
+  text-decoration: none;
+}
+nav ul li:hover{
+  background-color: black;
+  text-decoration: none;
+
+}
+
+aside{
+  float: left;
+
+}
+aside img {
+  height: 300px;
+  width: 300px;
+  padding: 4px;
+  margin: 50px 70px 50px 35%;
+  background-color: white;
+
+}
+
+section {
+  margin-left: 37%;
+  padding: 50px;
+  height: 310px;
+}
+footer {
+  clear: both;
+}
+footer ul{
+  width: 100%;
+  padding-left: 30%;
+}
+footer ul li{
+  list-style-type: none;
+  width: 10%;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+}
+.links{
+  height: 100px;
+  width: 100px;
+}
