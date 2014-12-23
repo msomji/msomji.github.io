@@ -38,6 +38,10 @@ nav ul li a:visited {
   color: white;
   text-decoration: none;
 }
+nav ul li a:link {
+  color: white;
+  text-decoration: none;
+}
 nav ul li:hover{
   background-color: black;
   text-decoration: none;
