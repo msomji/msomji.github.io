@@ -45,17 +45,16 @@ nav ul li:hover{
 
 }
 /*footer css*/
-footer{
+footer {
   clear: both;
 }
-
 footer ul{
-  width: 100%;
-  padding-left: 30%;
+  width: 70%;
+  margin-left: 20%;
 }
 footer ul li{
   list-style-type: none;
-  width: 10%;
+  width: 20%;
   display: inline-block;
   line-height: 30px;
   text-align: center;
