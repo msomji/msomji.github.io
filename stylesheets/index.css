@@ -50,13 +50,14 @@ nav ul li:hover{
 
 aside{
   float: left;
+  width: 40%;
 
 }
 aside img {
   height: 300px;
   width: 300px;
   padding: 4px;
-  margin: 50px 70px 50px 35%;
+  margin: 50px 0px 50px 25%;
   background-color: white;
 
 }
