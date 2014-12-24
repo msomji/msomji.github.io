@@ -30,6 +30,7 @@ font-weight: bolder;
 }
 .buttons a{
    text-decoration: none;
+   padding: 38% 25%;
 }
 nav ul li a:visited {
   color: white;
@@ -39,10 +40,29 @@ nav ul li a:link {
   color: white;
   text-decoration: none;
 }
-nav ul li:hover{
-  background-color: black;
+nav ul li a:hover{
+  color: red;
   text-decoration: none;
-
+}
+#contentstitle{
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+}
+#contents ul{
+  list-style: none;
+  text-align: center;
+}
+#contents ul li{
+  padding:10px;
+}
+#contents ul li a:visited {
+  text-decoration: none;
+}
+#contents ul li a:link {
+  text-decoration: none;
+}
+#contents ul li a:hover{
+  color: white;
 }
 /*footer css*/
 footer {
