@@ -16,7 +16,6 @@ main {
 }
 .centerit {
   text-align: center;
-  horizontal-align: auto;
   left: 50%;
 }
 #contents {
