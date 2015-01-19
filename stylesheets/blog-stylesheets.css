@@ -17,6 +17,7 @@ main {
 .centerit {
   text-align: center;
   left: 50%;
+  width: 100%;
 }
 #contents {
   display: inline-block;
