@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Maisam Somji</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+   <link href='http://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+</head>
+<nav>
+
+    <ul>
+      <li id="name"><header>Maisam Somji</header></li>
+
+      <li class="buttons"><a href="../index.html">Home</a></li>
+      <li class="buttons"><a href="../blog/blog-template.html">Blog</a></li>
+      <li class="buttons"><a href="#">Projects</a></li>
+      <li class="buttons"><a href="#">Resume</a></li>
+      <li class="buttons"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+<img id="picture" src="http://gp1.wac.edgecastcdn.net/802892/production_public/Artist/683203/image/Blog_Banner_-_Dundee_Road_Bridge.jpg">
+<main>
+  <contaier>
+
+     <div ID="BlogTitle">
+      <h1>A Scoop of Variables!</h1>
+      <h4>February 1, 2015</h4>
+    </div>
+
+
+  <section>
+      <p>When thinking of variables, one can consider them as objects in which you can hold information in while running a particular program. Depending on the program and your needs, you can set limitations to the variable (scope) that determines where it can be accessed from and whether it can be alters later on in the program or not.</p>
+
+      <p>There are only five different types of variables that are supported by ruby. There are Constant variables, Global variables, class variables, instance variables and local variables. I have listed these in that order intentionally with the variable with the largest scope at the start and the variable with the smallest scope at the end.</p>
+
+      <p>The constant variable is usually depicted by being defined in all caps as such: <code>INTEGER = 5 </code> over here the integer 5 is a constant variable named integer. Having the largest scope, this variable can be accessed from any where in the program. The global variable is depicted by a “$” preceding the variable name as such:  <code>$integer = 5</code> These two are very similar as both can be accessed from anywhere in the program however, the constant variable will not let you change its contents and will return a warning if you try to do so.</p>
+
+      <p>The class variable has the next largest scope. it is usually depicted by “@@“ preceding the variable name as such: <code>@@result = “true”</code>. These variables must be initialized before they can be used in the method definitions. Class variables have a scope that expands through the entire class and therefore if the variable is ever changed in one method it results in a permanent change of the variable in ever future occurrence. The instance variables that is depicted with an “@“ before the variable name is very similar but only differs that when it is changed, the variable is only altered for that particular instance, once a new method is initiated, the variable returns to its original value.</p>
+
+      <p>Local variables that are not preceded by anything before the variable name, they either start with an “_” or a lowercase letter and have the smallest scope of all variables. it is only accessible within the method it is introduced in.</p>
+
+      <p>This is obviously a short introduction to the different ruby variables, but I hope it sheds light on what they are and how they can be used across and within different classes and their methods.</p>
+
+
+</section>
+</containter>
+</main>
+
+<div ID="contents">
+  <h1 ID="contentstitle">Recent blogs</h4>
+  <ul>
+
+    <li><a href="c6-stereotype-threat.html">Stereotype Threat</a> (02/01/14)</li>
+
+    <li><a href="t6-oop-concepts.html">A Scoop of Ruby Variables</a> (02/01/14)</li>
+
+    <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
+
+    <li><a href="c4-tech-issues.html">We have a Bug problem!</a> (01/18/14)</li>
+
+    <li><a href="t4-enumerable-methods.html">Enumerables!</a> (01/18/14)</li>
+
+    <li><a href="t3-arrays-hashes.html">Comparing Hashes to Arrays</a> (01/11/14)</li>
+
+    <li><a href="c3_thinking-style.html">Do you have a growth or fixed mindset?</a> (01/11/14)</li>
+
+    <li><a href="t2-css-design.html">The differences between absolute, fixed and relative positioning</a> (12/24/14)</li>
+
+    <li><a href="t1-git-blog.html">What on Earth is Git/Github?</a> (12/14/14)</li>
+
+    <li><a href="c1-chefs-kitchen.html">Fireside Chat with Shareef</a> (12/14/14)</li>
+
+  </ul>
+
+</div>
+
+<footer>
+  <ul>
+    <li><a href="https://www.facebook.com/maisam.somji"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png" alt="facebook"></a></li>
+    <li> <a href="https://twitter.com/Somji_"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" alt="twitter"></a></li>
+    <li> <a href="https://www.linkedin.com/profile/view?id=111275783&trk=spm_pic"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-128.png" alt="linkedin"></a></li>
+    <li> <a href="https://github.com/msomji"><img class="links" src="http://rjny.github.io/assets/icons/github_bw.png" alt="github"></a></li>
+  </ul>
+
+</footer>
+
+
+</html>
