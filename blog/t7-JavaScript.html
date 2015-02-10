@@ -23,49 +23,52 @@
 
 <main>
   <container>
+    <!-- <a name="blogThree"> -->
+      <div ID="BlogTitle">
+          <!-- <h1>Phase 0: Week 2 Unit 1</h1> -->
+          <h1>Looping Through Ruby and JavaScript</h1>
+      <!-- <h3></h3> -->
+          <h4>February 8, 2014</h4>
+      </div>
 
-  <h1 class="centerit">Phase 0: Week 7, Unit 3</h1>
-  <h2 class="centerit">Looping Through Ruby and JavaScript</h2>
-  <h4 class="centerit">February 8, 2015</h4>
 
-  <section>
-     <p>This week we were introduced to JavaScript, a totally new territory for me personally. Surprisingly I wasn’t as intimidated as I had thought I would have been. Over all it turns out that Ruby and JavaScript both have a fair amount of overall between the two but there are also a few fundamental differences that need to be pointed out...<a href="t7-javascript.html">continue reading</a></p>
+  <section><p>This week we were introduced to JavaScript, a totally new territory for me personally. Surprisingly I wasn’t as intimidated as I had thought I would have been. Over all it turns out that Ruby and JavaScript both have a fair amount of overall between the two but there are also a few fundamental differences that need to be pointed out. In this blog I will be comparing how looping differs in Ruby compared to in JavaScript. </p>
+
+<p>Ruby allows for two different ways to loop through an object. The first way is to use a for, while or in loop and the other method is to use an iteration and a block that iterates through that particular object a certain amount of times. The for in loop is shown below:</p>
+
+<code> arr = [1,2,3,4]
+for item in arr
+puts item
+end</code>
+
+<p>Below is an example as to how you can iterate through a loop in Ruby.</p>
+
+<code> arr = [1,2,3,4]
+arr.each do |number|
+puts number
+end</code>
+
+<p> Hopefully so far, that was all review. Now when it comes to looping n JavaScript, it too does allow for a for/in loop but it does not work quite as well with arrays without the help of JQuery that we will cover in a later blog. Below I illustrate how to loop through an array using pure JavaScript</p>
+
+<code> var arr = [1,2,3,4];
+var number = 0;
+for (var len = arr.length; number < len; number++){
+console.log(arr[number]);
+}</code>
+
+<p>As we can see from the codes above, in JavaScript we have to define when the iteration should start and when it should end however when it comes to Ruby it is understood and the method understands that it only needs to iterate through the array as many times as the number of objects within the array. in addition to this JavaScript also makes us define a new variable (len) in oder for it to determine how many objects there are in the array that we need to iterate through where as none of that is needed in Ruby.</p>
+
+<p>From these examples it may come across that Javascript asks for more information about what it needs to do where as Ruby just takes what it is given and does more work in the background making it easier to use however this the reasoning behind this is that JavaScript allows its users a lot more freedom compared to Ruby and the cost of this freedom is that it needs more specific information in its methods to make sure that it is doing exactly what the user needs.</p>
+
+
   </section>
-
-
-
-  <h2 class="centerit">Exploring my Values</h2>
-  <h4 class="centerit">February 8, 2015</h4>
-
-  <section>
-     <p>Being in my early 20s, I see a lot of changes occurring in terms of how I think about certain situations and how I react to them. The main reason for this is that as we continue to experience new things we learn new things about ourselves of which one is our values. Values do change over time but...<a href="c7-values.html">continue reading</a></p>
-  </section>
-</container>
-
-<container>
-
-  <h1 class="centerit">Phase 0: Week 6, Unit 2</h1>
-  <h2 class="centerit">Stereotype Threat</h2>
-  <h4 class="centerit">February 1, 2015</h4>
-
-  <section>
-     <p>Stereotype threat refers to being at risk of confirming, as self-characteristic, a negative stereotype about one's group   (Steele & Aronson, 1995). When reading about this initially it makes me think about peer pressure but more so on a subconscious level. With stereotype threat, no one is actually trying to convince you to act...<a href="c6-stereotype-threat.html">continue reading</a></p>
-  </section>
-
-
-
-  <h2 class="centerit">A Scoop of Variables!</h2>
-  <h4 class="centerit">February 1, 2015</h4>
-
-  <section>
-     <p>When thinking of variables, one can consider them as objects in which you can hold information in while running a particular program. Depending on the program and your needs, you can set limitations to the variable (scope) that determines where it can be accessed from and whether it can...<a href="t6-oop-concepts.html">continue reading</a></p>
-  </section>
-</container>
-
+  </container>
 </main>
 
+
+
 <div ID="contents">
-  <h1 ID="contentstitle">Recent Blogs</h4>
+  <h1 ID="contentstitle">Recent blogs</h4>
   <ul>
     <li><a href="c7-values.html">Exploring my Values</a> (02/01/14)</li>
 
@@ -74,8 +77,6 @@
     <li><a href="c6-stereotype-threat.html">Stereotype Threat</a> (02/01/14)</li>
 
     <li><a href="t6-oop-concepts.html">A Scoop of Ruby Variables</a> (02/01/14)</li>
-
-    <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
 
     <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
 
@@ -94,7 +95,6 @@
     <li><a href="c1-chefs-kitchen.html">Fireside Chat with Shareef</a> (12/14/14)</li>
 
   </ul>
-
 </div>
 
 <footer>
