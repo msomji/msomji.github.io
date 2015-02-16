@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+  <title>Maisam Somji</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
+   <link href='http://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
+</head>
+<nav>
+
+    <ul>
+      <li id="name"><header>Maisam Somji</header></li>
+
+      <li class="buttons"><a href="../index.html">Home</a></li>
+      <li class="buttons"><a href="../blog/blog-template.html">Blog</a></li>
+      <li class="buttons"><a href="#">Projects</a></li>
+      <li class="buttons"><a href="#">Resume</a></li>
+      <li class="buttons"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+<img id="picture" src="http://gp1.wac.edgecastcdn.net/802892/production_public/Artist/683203/image/Blog_Banner_-_Dundee_Road_Bridge.jpg">
+<main>
+  <contaier>
+
+     <div ID="BlogTitle">
+      <h1>Using Constructor Methods as Prototypes in JS and other cheats!</h1>
+      <h4>February 13, 2014</h4>
+    </div>
+
+  <section>
+      <p>Prototypes can get very confusing very fast but to keep things simple, they are basically objects that point to other objects.</p>
+
+      <p>Below is an example of a way to pass prototypes through a constructor method</p>
+
+      <code>
+       function Vehicle (year,color) {
+        this.year = year;
+        this.color = color;
+      }
+      function Contour(year,color) {
+        this.make = "Ford";
+        this.model = "Contour";
+        Vehicle.call(this, year,color);
+      }
+
+      // create object from prototype
+      var white99contour = new Contour(1999,'White');
+      console.log(Object.getPrototypeOf(white99contour))
+        // => Contour {}
+      console.log(white99contour);
+        // => Contour {make: "Ford", model: "Contour", year: 1999, color: "White"}
+        </code>
+
+        <p>Below we pass a prototype using Object.create</p>
+        <code>
+         var dog = {
+        genus: "canis",
+        species: "lupus"
+      }
+
+      // create basic object from another
+      var puppy = Object.create(dog);
+      console.log(puppy);
+        // => Object {genus: "canis", species: "lupus"}
+      console.log(Object.getPrototypeOf(puppy))
+        // => Object {genus: "canis", species: "lupus"}
+        // Not super helpful since it the object is being expressed and it is essentially a clone.
+
+        // But you can test it this way...
+      console.log(Object.getPrototypeOf(puppy) == dog)
+        // => true
+
+      // Object#create with more properties within the assignment.
+      var tanya = Object.create(dog,{age: {value: 8}, name: {value: "Tanya"}, breed: {value: "Golden-Retriever"}});
+      console.log(tanya);
+        // => Object {age: 8, name: "Tanya", breed: "Golden-Retriever", genus: "canis", species: "lupus"}
+      console.log(Object.getPrototypeOf(tanya) == dog)
+        // => true
+
+      // Object#create but add more properties after
+      var sophie = Object.create(dog);
+      sophie.age = 6;
+      sophie.name = "Sophia";
+      sophie.breed = "Golden-Doodle";
+      console.log(sophie);
+        // =>  Object {age: 6, name: "Sophia", breed: "Golden-Doodle", genus: "canis", species: "lupus"}
+      console.log(Object.getPrototypeOf(sophie) == dog)
+        // => true
+        </code>
+
+
+
+</section>
+</containter>
+</main>
+
+<div ID="contents">
+  <h1 ID="contentstitle">Recent blogs</h4>
+  <ul>
+    <li><a href="t8-tech.html">So you think you know how the internet works?</a> (02/01/14)</li>
+
+    <li><a href="c8-conflict.html">And the Conflict...</a> (02/01/14)</li>
+
+    <li><a href="cheat-sheet.html">Cheat!</a> (02/01/14)</li>
+
+    <li><a href="c7-values.html">Exploring my Values</a> (02/01/14)</li>
+
+    <li><a href="t7-JavaScript.html">Looping Through Ruby and JavaScript</a> (02/08/14)</li>
+
+    <li><a href="c6-stereotype-threat.html">Stereotype Threat</a> (02/01/14)</li>
+
+    <li><a href="t6-oop-concepts.html">A Scoop of Ruby Variables</a> (02/01/14)</li>
+
+    <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
+
+    <li><a href="c4-tech-issues.html">We have a Bug problem!</a> (01/18/14)</li>
+
+    <li><a href="t4-enumerable-methods.html">Enumerables!</a> (01/18/14)</li>
+
+    <li><a href="t3-arrays-hashes.html">Comparing Hashes to Arrays</a> (01/11/14)</li>
+
+    <li><a href="c3_thinking-style.html">Do you have a growth or fixed mindset?</a> (01/11/14)</li>
+
+    <li><a href="t2-css-design.html">The differences between absolute, fixed and relative positioning</a> (12/24/14)</li>
+
+    <li><a href="t1-git-blog.html">What on Earth is Git/Github?</a> (12/14/14)</li>
+
+    <li><a href="c1-chefs-kitchen.html">Fireside Chat with Shareef</a> (12/14/14)</li>
+
+  </ul>
+
+</div>
+
+<footer>
+  <ul>
+    <li><a href="https://www.facebook.com/maisam.somji"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png" alt="facebook"></a></li>
+    <li> <a href="https://twitter.com/Somji_"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" alt="twitter"></a></li>
+    <li> <a href="https://www.linkedin.com/profile/view?id=111275783&trk=spm_pic"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-128.png" alt="linkedin"></a></li>
+    <li> <a href="https://github.com/msomji"><img class="links" src="http://rjny.github.io/assets/icons/github_bw.png" alt="github"></a></li>
+  </ul>
+
+</footer>
+
+
+</html>
