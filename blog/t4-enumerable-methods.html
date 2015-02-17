@@ -32,17 +32,35 @@
 
         <p>Lets take an example: Imagine you have an array or numbers that you would like to multiply all the numbers within the array by 2. This is can be done using a very basic for loop as seen below:</p>
 
-          <div class="centerit"><img src="../imgs/for_loop.png"></div>
+        <pre>
+          <code>
+            array = [1,2,3,4,5,6,7]
+
+            for x in array
+                puts x*2
+            end
+
+            => 2
+            => 4
+            => 6
+            => 8
+            => 10
+            => 12
+            => 14
+          </code>
+        </pre>
 
         <p>But, the using an enumerable such as .map, it allows us to perform the same task with a lot less code.</p>
 
-          <div class="centerit"><img src="../imgs/calling_map.png"></div>
+        <pre>
+          <code>
+            new_array = array.map {|x| x*2}
+            new_array
 
+             => [2, 4, 6, 8, 10, 12, 14]
+          </code>
+        </pre>
         <p>The .map in the case above acts very similar to the .each method that am sure you have used in your previous exercises. The key difference is that with .map, it actually alters each element in the iteration and put it into the new array while .each leaves the original elements unchanged. In case you were wondering, you can use .map! to also just change the array as that you are iterating through.</p>
-
-
-
-
 </section>
 </containter>
 </main>
