@@ -29,6 +29,10 @@ main>h1 {
   margin-top: 0;
 }
 
+pre {
+
+  background-color: #999;
+}
 
 
 /*Mentor with someone to find a way to get rid of the float*/
