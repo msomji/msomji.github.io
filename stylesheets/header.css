@@ -1,0 +1,43 @@
+nav {
+  background-color: #002231;
+  height: 7em;
+  position: relative;
+}
+nav ul {
+  position: absolute;
+  list-style-type: none;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+}
+nav ul li {
+  /*position: absolute;*/
+  display: inline-block;
+}
+#name {
+font-size: 3em;
+padding-left: 5%;
+width: 35%;
+}
+.buttons {
+font-size: 1.250em;
+width: 10%;
+
+}
+.buttons a{
+   text-decoration: none;
+   padding: 38% 25%;
+}
+nav ul li a:visited {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:link {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: red;
+  text-decoration: none;
+}

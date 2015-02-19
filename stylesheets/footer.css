@@ -1,0 +1,17 @@
+footer {
+  clear: both;
+  text-align: center;
+}
+footer ul{
+  width: 50%;
+  margin-left: 20%;
+}
+footer ul li{
+  list-style-type: none;
+  display: inline-block;
+  width: 10%;
+}
+.links{
+  height: 50px;
+  width: 50px;
+}

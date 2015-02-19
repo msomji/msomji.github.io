@@ -1,117 +1,23 @@
-<!DOCTYPE html>
-<head>
-  <title>Maisam Somji</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheets.css">
-   <link href='http://fonts.googleapis.com/css?family=Dosis:800' rel='stylesheet' type='text/css'>
-</head>
-<nav>
-
-    <ul>
-      <li id="name"><header>Maisam Somji</header></li>
-
-      <li class="buttons"><a href="../index.html">Home</a></li>
-      <li class="buttons"><a href="../blog/blog-template.html">Blog</a></li>
-      <li class="buttons"><a href="#">Projects</a></li>
-      <li class="buttons"><a href="#">Resume</a></li>
-      <li class="buttons"><a href="#">Contact</a></li>
-    </ul>
-  </nav>
+---
+layout: landing-page
+---
 
 <img id="picture" src="http://gp1.wac.edgecastcdn.net/802892/production_public/Artist/683203/image/Blog_Banner_-_Dundee_Road_Bridge.jpg">
 
 <main>
   <container>
+    {% for post in site.posts limit:5 %}
 
-  <h1 class="centerit">Phase 0: Week 7, Unit 3</h1>
-  <h2 class="centerit">Looping Through Ruby and JavaScript</h2>
-  <h4 class="centerit">February 8, 2015</h4>
-
-  <section>
-     <p>This week we were introduced to JavaScript, a totally new territory for me personally. Surprisingly I wasn’t as intimidated as I had thought I would have been. Over all it turns out that Ruby and JavaScript both have a fair amount of overall between the two but there are also a few fundamental differences that need to be pointed out...<a href="t7-JavaScript.html">continue reading</a></p>
-  </section>
-
-
-
-  <h2 class="centerit">Exploring my Values</h2>
-  <h4 class="centerit">February 8, 2015</h4>
+      <h2 class="centerit">{{ post.title }}</h2>
+     <h4 class="centerit"> {{ post.date | date: '%B %d, %Y' }} </h4>
 
   <section>
-     <p>Being in my early 20s, I see a lot of changes occurring in terms of how I think about certain situations and how I react to them. The main reason for this is that as we continue to experience new things we learn new things about ourselves of which one is our values. Values do change over time but...<a href="c7-values.html">continue reading</a></p>
+     <p>{{ post.content |truncatehtml | truncatewords: 50 }}...<a href={{ post.url }}>continue reading</a></p>
   </section>
-</container>
+    {% endfor %}
 
-<container>
-
-  <h1 class="centerit">Phase 0: Week 6, Unit 2</h1>
-  <h2 class="centerit">Stereotype Threat</h2>
-  <h4 class="centerit">February 1, 2015</h4>
-
-  <section>
-     <p>Stereotype threat refers to being at risk of confirming, as self-characteristic, a negative stereotype about one's group   (Steele & Aronson, 1995). When reading about this initially it makes me think about peer pressure but more so on a subconscious level. With stereotype threat, no one is actually trying to convince you to act...<a href="c6-stereotype-threat.html">continue reading</a></p>
-  </section>
-
-
-
-  <h2 class="centerit">A Scoop of Variables!</h2>
-  <h4 class="centerit">February 1, 2015</h4>
-
-  <section>
-     <p>When thinking of variables, one can consider them as objects in which you can hold information in while running a particular program. Depending on the program and your needs, you can set limitations to the variable (scope) that determines where it can be accessed from and whether it can...<a href="t6-oop-concepts.html">continue reading</a></p>
-  </section>
 </container>
 
 </main>
 
-<div ID="contents">
-  <h1 ID="contentstitle">Recent Blogs</h4>
-  <ul>
-    <li><a href="t8-tech.html">So you think you know how the internet works?</a> (02/01/14)</li>
-
-    <li><a href="c8-conflict.html">And the Conflict...</a> (02/01/14)</li>
-
-    <li><a href="cheat-sheet.html">Cheat!</a> (02/01/14)</li>
-
-    <li><a href="c7-values.html">Exploring my Values</a> (02/01/14)</li>
-
-    <li><a href="t7-JavaScript.html">Looping Through Ruby and JavaScript</a> (02/08/14)</li>
-
-    <li><a href="c6-stereotype-threat.html">Stereotype Threat</a> (02/01/14)</li>
-
-    <li><a href="t6-oop-concepts.html">A Scoop of Ruby Variables</a> (02/01/14)</li>
-
-    <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
-
-    <li><a href="c5-feedback.html">Pairing and Giving Feedback</a> (01/22/14)</li>
-
-    <li><a href="c4-tech-issues.html">We have a Bug problem!</a> (01/18/14)</li>
-
-    <li><a href="t4-enumerable-methods.html">Enumerables!</a> (01/18/14)</li>
-
-    <li><a href="t3-arrays-hashes.html">Comparing Hashes to Arrays</a> (01/11/14)</li>
-
-    <li><a href="c3_thinking-style.html">Do you have a growth or fixed mindset?</a> (01/11/14)</li>
-
-    <li><a href="t2-css-design.html">The differences between absolute, fixed and relative positioning</a> (12/24/14)</li>
-
-    <li><a href="t1-git-blog.html">What on Earth is Git/Github?</a> (12/14/14)</li>
-
-    <li><a href="c1-chefs-kitchen.html">Fireside Chat with Shareef</a> (12/14/14)</li>
-
-  </ul>
-
-</div>
-
-<footer>
-  <ul>
-    <li><a href="https://www.facebook.com/maisam.somji"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_black-512.png" alt="facebook"></a></li>
-    <li> <a href="https://twitter.com/Somji_"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" alt="twitter"></a></li>
-    <li> <a href="https://www.linkedin.com/profile/view?id=111275783&trk=spm_pic"><img class="links" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_black-128.png" alt="linkedin"></a></li>
-    <li> <a href="https://github.com/msomji"><img class="links" src="http://rjny.github.io/assets/icons/github_bw.png" alt="github"></a></li>
-  </ul>
-
-</footer>
-
-
-</html>
+  {% include sidebar.html %}
