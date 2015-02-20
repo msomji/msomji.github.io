@@ -1,15 +1,16 @@
 #contentstitle{
   text-align: center;
-  font-family: 'Dosis', sans-serif;
 }
 #contents ul li {
   padding: 8px;
 }
 #contents ul li a:visited {
   text-decoration: none;
+  color: black;
 }
 #contents ul li a:link {
   text-decoration: none;
+  color: black;
 }
 #contents ul li a:hover{
   color: white;
