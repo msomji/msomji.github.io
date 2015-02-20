@@ -3,7 +3,7 @@ layout: blog-post
 title: “Questionable Questions"
 subtitle: “Ask Away"
 date: 2015-02-20
---
+---
 
 I am certain that while growing up everyone had that class where participation was part of the grade. As annoying as those classes were, they were structured in that manner because asking and answering questions are extremely important tools that one needs to be able to utilize effectively in any career they pursue. Upon reading a couple other blogs on our most dearest internet I have come up with a few key factors that you should consider when asking a question.
 
