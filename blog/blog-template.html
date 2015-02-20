@@ -1,12 +1,10 @@
 ---
 layout: landing-page
 ---
-
-<img id="picture" src="http://gp1.wac.edgecastcdn.net/802892/production_public/Artist/683203/image/Blog_Banner_-_Dundee_Road_Bridge.jpg">
-
-<main>
-  <container>
-    {% for post in site.posts limit:5 %}
+  <div ID= "blog-contents">
+        <div ID= "blog">
+         <div ID="BlogTitle">
+          {% for post in site.posts limit:5 %}
 
       <h2 class="centerit">{{ post.title }}</h2>
      <h4 class="centerit"> {{ post.date | date: '%B %d, %Y' }} </h4>
@@ -15,9 +13,7 @@ layout: landing-page
      <p>{{ post.content |truncatehtml | truncatewords: 50 }}...<a href={{ post.url }}>continue reading</a></p>
   </section>
     {% endfor %}
-
-</container>
-
-</main>
-
+        </div>
+  </div>
   {% include sidebar.html %}
+  </body>

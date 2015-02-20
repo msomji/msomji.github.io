@@ -1,43 +1,52 @@
-nav {
-  background-color: #002231;
-  height: 7em;
-  position: relative;
+html{
+  background: url(http://www.zingerbug.com/Backgrounds/background_images/white_painted_textured_wall_tileable.jpg);
 }
-nav ul {
-  position: absolute;
-  list-style-type: none;
-  font-family: 'Dosis', sans-serif;
-  font-weight: bolder;
-  color: white;
-  width: 100%;
-}
-nav ul li {
-  /*position: absolute;*/
-  display: inline-block;
-}
-#name {
-font-size: 3em;
-padding-left: 5%;
-width: 35%;
-}
-.buttons {
-font-size: 1.250em;
-width: 10%;
+#header-contents {
+
+  width: 70%;
+  max-width: 800px;
+  margin: 30px auto 0px;
+  text-align: center;
 
 }
-.buttons a{
-   text-decoration: none;
-   padding: 38% 25%;
+#header-contents h1 {
+  font-size: 4em;
+  margin: 25px;
 }
-nav ul li a:visited {
-  color: white;
+#name{
+  font-size: 2em;
+  text-align: center;
+}
+#nav {
+  list-style-type: none;
+  position: relative;
+  padding: 0px;
+  margin: 0px auto 0px;
+  font-weight: bold;
+}
+#nav .buttons {
+  display: inline-block;
+  margin: auto 10px;
+  width: 15%;
+}
+#nav li a {
+  padding: 0px;
+}
+
+#nav li a:visited {
+  color: black;
   text-decoration: none;
 }
-nav ul li a:link {
-  color: white;
+#nav li a:link {
+  color: black;
   text-decoration: none;
 }
-nav ul li a:hover{
-  color: red;
+#nav li a:hover{
+  color: green;
   text-decoration: none;
+}
+hr {
+  border-bottom: black solid 2px;
+  width: 80%;
+  max-width: 850px;
 }

@@ -2,12 +2,8 @@
   text-align: center;
   font-family: 'Dosis', sans-serif;
 }
-#contents ul{
-  list-style: none;
-  text-align: center;
-}
-#contents ul li{
-  padding: 10px;
+#contents ul li {
+  padding: 8px;
 }
 #contents ul li a:visited {
   text-decoration: none;
@@ -17,4 +13,15 @@
 }
 #contents ul li a:hover{
   color: white;
+}
+#contents {
+  display: inline-block;
+  text-align: center;
+  float: right;
+  width: 25%;
+}
+#contents ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
