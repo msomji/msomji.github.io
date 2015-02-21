@@ -25,8 +25,7 @@ Despite the different types of thinking styles, it is important to remember that
 
 I took the Gregorc’s test to determine my thinking style a couple weeks ago which determined that I am abstract random thinker. When I took the test, this did not come to me as a surprise. Having this information though is a huge advantage as I now know what kind of environment I need to be able to think the most effectively. This will make working with others a lot easier as I will be able to communicate very simply my thinking style to other members.
 
-
-  <a href="http://www.thelearningweb.net/personalthink.html"><h5 class="centerit"> Take the test and find out what kind of thinker you are! It only takes five minutes!</h5></a>
+  [Take the test and find out what kind of thinker you are! It only takes five minutes!](http://www.thelearningweb.net/personalthink.html)
 
 Another important factor that determines how efficient we are at what we do, is knowing how we learn and having the correct mindset. Dr. Carol Dweck, a psychology professor at Stanford spear headed the research done in this field and determined that there are two separate types of mindsets, fixed and growth mindsets. As I am more of a visual learner, below is a picture that compares the two mindsets with each other.
 
@@ -37,6 +36,6 @@ Another important factor that determines how efficient we are at what we do, is 
 
 I know that I certainly have a few fixed mindset tendencies but luckily, as I continue to develop and learn new skills I can influence and change my mindset to become more of a growth mindset. Certainly knowing my shortcomings is the first step to becoming a better learner.
 
- <a href="http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/"><h5 class="centerit">Click here to read more about fixed vs growth mindsets!</h5></a>
+[Click here to read more about fixed vs growth mindsets!](http://www.brainpickings.org/index.php/2014/01/29/carol-dweck-mindset/)
 
 So far the phase 0 experience has only been getting better. Though the challenges are starting to demand both more time and thinking, I believe that I have been able to set a particular routine in place to allow myself to successfully cover the assignments and also give my self enough time to dig deeper in more specific topics of more interest to me personally.

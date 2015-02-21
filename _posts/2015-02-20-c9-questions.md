@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: “Questionable Questions"
+title: 'Questionable Questions'
 subtitle: “Ask Away"
 date: 2015-02-20
 ---

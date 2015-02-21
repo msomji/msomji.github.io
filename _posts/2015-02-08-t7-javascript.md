@@ -9,28 +9,16 @@ This week we were introduced to JavaScript, totally new territory for me persona
 
 Ruby allows for two different ways to loop through an object. The first way is to use a "for", "while" or "in" loop and the other method is to use an iteration and a block that iterates through that particular object a certain amount of times. The "for in" loop is shown below:
 
-
-  arr = [1,2,3,4]
-    for (item in arr)
-      console.log(item);
+<script src="https://gist.github.com/msomji/0c1f31e796dcb919cdd1.js"></script>
 
 
 Below is an example as to how you can iterate through a loop in Ruby.
 
-
-  arr = [1,2,3,4]
-  arr.each do |number|
-    puts number
-  end
+<script src="https://gist.github.com/msomji/8bd28d9f4c241210abfd.js"></script>
 
 Hopefully so far, that was all review. Now when it comes to looping n JavaScript, it too does allow for a for/in loop but it does not work quite as well with arrays without the help of JQuery that we will cover in a later blog. Below I illustrate how to loop through an array using pure JavaScript
 
-
-  var arr = [1,2,3,4];
-  var number = 0;
-  for (var len = arr.length; number < len; number++){
-    console.log(arr[number]);
-  }
+<script src="https://gist.github.com/msomji/d52126f3afa62f898aea.js"></script>
 
 As we can see from the codes above, in JavaScript we have to define when the iteration should start and when it should end however when it comes to Ruby it is understood and the method understands that it only needs to iterate through the array as many times as the number of objects within the array. in addition to this JavaScript also makes us define a new variable (len) in oder for it to determine how many objects there are in the array that we need to iterate through where as none of that is needed in Ruby.
 

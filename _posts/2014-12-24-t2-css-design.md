@@ -15,29 +15,13 @@ Fixed is the easiest to understand. A fixed element is positioned on the screen 
 
 The absolute property is fairly similar to the fixed property however this time the element is positioned on the page rather than the screen (key word: “page”) When setting an element to absolute, it is excluded from the normal flow of things and abides by any additional instructions you give it. i.e:
 
-Div {
-
-Position: absolute;
-
-Top:0;
-
-Right:0;
-
-}
+<script src="https://gist.github.com/msomji/64ec251fbab75e04d298.js"></script>
 
 In the example above, the element will be positioned on the top right corner of the page. It is important to remember that unlike the fixed characteristic, when the page scrolled down, the absolute position disappears as it is positioned on the page rather than on the screen.
 
 The relative characteristic accompanied by additional top, bottom, left and right information allows the element to move relative to where it would have been placed normally in the document. The relative position characteristic becomes a lot more interesting when it includes other elements within it. For example when an element(A) with an absolute position is placed within an element(B) with a relative position, "A" moves relative to "B" so this time if we applied the following code to "A":
 
-A {
-
-Position: absolute;
-
-Top:0;
-
-Right:0;
-
-}
+<script src="https://gist.github.com/msomji/a83651a961f071cf1ffd.js"></script>
 
 “A” would position it self in the top right corner of “B.” It’s a little confusing so read that last paragraph again, its pretty neat stuff!
 
